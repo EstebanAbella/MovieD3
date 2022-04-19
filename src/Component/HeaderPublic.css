@@ -1,5 +1,5 @@
 header{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -27,7 +27,7 @@ header{
 }
 
 .header{
-    position: relative;
+    position: absolute;
 }
 
 .LogoContainer{
