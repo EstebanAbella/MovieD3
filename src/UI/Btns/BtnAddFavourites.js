@@ -16,11 +16,13 @@ function BtnAddFavourites({data}){
     useEffect(
         () => {
             const fav = JSON.parse(localStorage.getItem('favourites'))
-            const resultFav = fav.filter(f => f.id === data.id)
-            if(Object.keys(resultFav).length !== 0){
-                setFavAdd(true)
-            }else{
-                setFavAdd(false)
+            if(Object.keys(fav).length !== 0){
+                const resultFav = fav.filter(f => f.id === data.id)
+                if(Object.keys(resultFav).length !== 0){
+                    setFavAdd(true)
+                }else{
+                    setFavAdd(false)
+                }
             }
         },[data.id]
     )
