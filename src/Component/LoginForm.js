@@ -56,7 +56,7 @@ function LoginForm(){
 
     const loginUser = async () => {
         try{
-            const response = await axios.post('https://challenge-react.alkemy.org/', form)
+            const response = await axios.post('http://challenge-react.alkemy.org/', form)
             if(response.data){
                 setMessageAlert({ ...messageAlert, loandingForm: false })
                 const token = response.data
@@ -80,7 +80,7 @@ function LoginForm(){
             'Email: challenge@alkemy.org<br>' +
             'Password: react',
             icon:'error',
-            button:'Ok',
+            confirmButtonText:'Ok',
             timer:'7000'
         })
     }

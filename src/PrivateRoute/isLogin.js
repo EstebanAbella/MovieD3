@@ -1,3 +1,4 @@
 export const isLogin = () => {
-    return ( localStorage.getItem('token'))
+    return(true)
 }
+//return ( localStorage.getItem('token'))
