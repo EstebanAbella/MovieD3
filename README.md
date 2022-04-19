@@ -1,19 +1,11 @@
 Movie D3 es una App responsive que muestra películas y series.
 
-Al ingresar a la app pide email y contraseña, ambos campos obligatorios. En caso de poner datos incorrectos, muestra un alerta con los siguientes datos para acceder:\
-
-Email: 'challenge@alkemy.org'.\
-Password: 'react'.\
-
-Se guarda Token en el localstorege.\
-
-Redirige a la "Home" en donde se visualizan las películas y series mas populares con opción de guardar en favoritos, un buscador que filtra por título y una sección en donde muestra los trailers de los estrenos.
+Página "Home" se visualizan las películas y series mas populares con opción de guardar en favoritos, un buscador que filtra por título y una sección en donde muestra los trailers de los estrenos.
 
 Página de 'Películas' y 'Series' en donde posee un buscador que filtra por título, con paginación.
 
 Página de 'Favoritos', se visualizan los favoritos guardados, aquí se pueden eliminar. Todas estas acciones son guardadas en el localstorage.
 
-Cierre de sesion eliminando Token del localstorage.\
 
 
 Dependencias:\

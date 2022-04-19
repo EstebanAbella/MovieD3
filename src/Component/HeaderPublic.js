@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 import './HeaderPublic.css'
 import Logo from '../Img/film-reel.png'
 import Loupe from '../Img/loupe.png'
-import { useHistory } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 import InputSearch from './InputSearch'
 
 function HeaderPublic(){
 
     const [btnResponsive, setBtnResponsive] = useState('')
-    const history = useHistory()
+    //const history = useHistory()
     const [inputH, setInputH] = useState(false)
 
     /* Determinar altura elemento */
@@ -58,10 +58,11 @@ function HeaderPublic(){
         }
     }
 
-    const CloseSesion = () =>{
+    /*const CloseSesion = () =>{
         localStorage.removeItem('token')
         history.push('/login')
     }
+    <li className="btnClose" onClick={CloseSesion}><Link to="/login">Exit</Link></li>*/
 
     const handeClick = () => {
         if(inputH){
@@ -86,8 +87,6 @@ function HeaderPublic(){
                     <li><Link to="/movie-all">Movie</Link></li>
                     <li><Link to="/tv-all">Tv</Link></li>
                     <li><Link to="/favourites">Favourites</Link></li>
-
-                    <li className="btnClose" onClick={CloseSesion}><Link to="/login">Exit</Link></li>
                 </ul>
             </nav>
 

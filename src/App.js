@@ -45,6 +45,10 @@ function App() {
 					path="/" exact
 					render={() => (isLogin() ? <HomePage /> : <Redirect to="/login" />)}
 				/>
+				<Route
+					path="*" exact
+					render={() => (isLogin() ? <HomePage /> : <Redirect to="/login" />)}
+				/>
 			</AnimatedSwitch>
     	</Router>
   );
