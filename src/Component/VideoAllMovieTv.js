@@ -37,13 +37,14 @@ function VideoAllMovieTv(){
                     <p onClick={()=>{setSelectMovieTv(true)}} >Movie</p>
                     <p onClick={()=>{setSelectMovieTv(false)}} >Tv</p>
                 </div>
-                <div className="containerSliderVideo"  >
+                <div className="containerSliderVideo">
                     {selectMovieTv ?
                     dataMovies.map(( i, index ) => {return (<VideoMovie idMovieTv={i} key={index} index={index}  changeIndex={changeIndex} movie={true} /> )})
                     :
                     dataTv.map(( i, index ) => {return (<VideoMovie idMovieTv={i} key={index} index={index}  changeIndex={changeIndex} movie={false}/> )})
                     }
                 </div>
+
             </section>
         </>
     )

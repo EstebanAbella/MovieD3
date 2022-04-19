@@ -34,9 +34,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: 0.5s;
+    animation-name: animatedVideo;
+    animation-duration: 2s;
 }
 
 .containerImgTxtVideoAll{
+    animation-name: animatedVideo;
+    animation-duration: 2s;
     position: relative;
     width: 300px;
     height: 220px;
@@ -45,14 +51,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 0;
 }
-#effec{
-    opacity: 0;
-}
-#effectrue{
-    opacity: 1;
-    transition: 1.8s;
+
+@keyframes animatedVideo{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .containerImgVideoAll{

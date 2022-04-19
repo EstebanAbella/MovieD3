@@ -11,11 +11,9 @@ function VideoMovie({idMovieTv, index, changeIndex, movie}){
 
     const [videoMovie, setVideoMovie] = useState([])
     const [videoAll, setVideoAll] = useState(false)
-    const [loanding, serLoanding] = useState(true)
 
     useEffect(
         () => {
-            serLoanding(true)
             const getVideoM = async () => {
                 try{
                     if(movie){
@@ -23,14 +21,12 @@ function VideoMovie({idMovieTv, index, changeIndex, movie}){
                         const response = await getVideoMovie(idMovieTv.id)
                         if(response?.results[0]?.key){
                             setVideoMovie(response?.results[0]?.key)
-                            serLoanding(false)
                         }
                     }else{
                         setVideoMovie([])
                         const response = await getVideoTv(idMovieTv.id)
                         if(response?.results[0]?.key){
                             setVideoMovie(response?.results[0]?.key)
-                            serLoanding(false)
                         }
                     }
                 }catch(error){
@@ -66,7 +62,7 @@ function VideoMovie({idMovieTv, index, changeIndex, movie}){
         }
 
         {videoMovie.length !== 0 &&
-            <div className="containerImgTxtVideoAll" id={loanding ? 'effec' : 'effectrue'}>
+            <div className="containerImgTxtVideoAll">
                 <div className="containerImgVideoAll" onClick={() =>{handleClick(true)}}   onMouseEnter={() => {changeIndex(index)}} >
                     <img src={ idMovieTv.backdrop_path ? `https://image.tmdb.org/t/p/w500${idMovieTv.backdrop_path}` : `https://image.tmdb.org/t/p/w500${idMovieTv.poster_path}`} alt='Imagen Película' className="imgVideoBackgroun"></img>
                     <img src={PlayImg} alt='Button play' className="playButton" ></img>
@@ -82,11 +78,3 @@ function VideoMovie({idMovieTv, index, changeIndex, movie}){
 }
 
 export default VideoMovie
-/*
-            {videoMovie.length !== 0 &&
-                <ReactPlayer url={`https://www.youtube.com/watch?v=${videoMovie}`} 
-                width='400px' height='250px'
-                />
-            }
-
-*/
