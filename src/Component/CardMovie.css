@@ -1,0 +1,84 @@
+.cardMovie{
+    position: relative;
+    width: 240px;
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: var(--white);
+    margin: 5px;
+}
+
+.cardMovie p{
+    margin: 0;
+}
+
+.imgCardMovie{
+    position: relative;
+    width: 240px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+    background-image: url('../Img/popcorn-anime.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.imgCardMovie .imgCard{
+    position: relative;
+    width: 240px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.voteCardMovie{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voteCardMovie p{
+    font-size: var(--text2);
+}
+
+.voteCardMovie span{
+    position: relative;
+    font-size: var(--text3);
+}
+
+.textCardMovie{
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.titleCardMovie{
+    font-size: var(--text2);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+
+.btnFavouritesCard{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

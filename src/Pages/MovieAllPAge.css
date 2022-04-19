@@ -1,0 +1,32 @@
+.movieTvAllPAge{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    cursor: default;
+}
+
+.containerAllMovieTv{
+    position: relative;
+    width: 100%;
+    min-height: 63vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titleAllMovieTv{
+    position: relative;
+    width: 100%;
+    min-height: 22vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+}

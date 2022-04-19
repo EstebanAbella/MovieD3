@@ -1,0 +1,33 @@
+.favouritesPage{
+    position: relative;
+    width: 100%;
+    min-height: 63vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+    cursor: default;
+}
+
+.msjFavourites{
+    font-size: var(--heading4);
+    font-weight: 400;
+    margin: 0 20px -100px 0;
+}
+
+.imgFavourites{
+    width: 350px;
+}
+
+@media all and (max-width: 745px ){
+    .msjFavourites{
+        margin: 0 0px 0px 0;
+    }
+}
+
+@media all and (max-width: 450px ){
+    .imgFavourites{
+        width: 250px;
+    }
+}

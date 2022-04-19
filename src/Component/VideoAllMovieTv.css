@@ -1,0 +1,168 @@
+.videoAllMovieTv{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:scroll;
+    color: var(--white);
+
+}
+
+.btnSelectMovieTv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 13px;
+    font-size: var(	--text1);
+    z-index: 5;
+}
+
+.btnSelectMovieTv p{
+    cursor: pointer;
+}
+
+.containerSliderVideo{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImgTxtVideoAll{
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+#effec{
+    opacity: 0;
+}
+#effectrue{
+    opacity: 1;
+    transition: 1.8s;
+}
+
+.containerImgVideoAll{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.containerImgVideoAll:hover{
+    transform: scale(105%);
+    transition: 0.5s all;
+}
+
+.containerImgVideoAll:hover .playButton{
+    transform: scale(110%);
+    filter: invert(90%);
+    transition: 0.5s all;
+}
+
+.txtVideoAll{
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.playButton{
+    width: 40px;
+    filter: invert(100%);
+    z-index: 2;
+}
+
+.imgVideoBackgroun{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.videoAll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    z-index: 9999999;
+    filter: invert(100%);
+}
+
+.closeButton:hover{
+    transform: scale(90%);
+    filter: invert(90%);
+    transition: 0.5s all;
+}
+
+/*Styles Scroll*/
+.videoAllMovieTv::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.videoAllMovieTv::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.videoAllMovieTv::-webkit-scrollbar-button:increment,
+.videoAllMovieTv::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.videoAllMovieTv::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.videoAllMovieTv::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.videoAllMovieTv::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+/* FIN Styles Scroll*/
+
+.titleVideo{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 150px;
+}

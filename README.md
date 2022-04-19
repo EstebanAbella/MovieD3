@@ -1,3 +1,30 @@
+Movie D3 es una App responsive que muestra películas y series.
+
+Al ingresar a la app pide email y contraseña, ambos campos obligatorios. En caso de poner datos incorrectos, muestra un alerta con los siguientes datos para acceder:\
+
+Email: 'challenge@alkemy.org'.\
+Password: 'react'.\
+
+Se guarda Token en el localstorege.\
+
+Redirige a la "Home" en donde se visualizan las películas y series mas populares con opción de guardar en favoritos, un buscador que filtra por título y una sección en donde muestra los trailers de los estrenos.
+
+Página de 'Películas' y 'Series' en donde posee un buscador que filtra por título, con paginación.
+
+Página de 'Favoritos', se visualizan los favoritos guardados, aquí se pueden eliminar. Todas estas acciones son guardadas en el localstorage.
+
+Cierre de sesion eliminando Token del localstorage.\
+
+
+Dependencias:\
+.Axios.\
+.Redux.\
+.React-router-dom\
+.React bootstrap.\
+.Sweet alert 2.\
+.React-lazy-load-image\
+.React-router-transition\
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +95,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Skeleton Componente
+
+Componente para dar feedback al usuario cuando se esté realizando la carga de contenido.
+
+El componente Skeleton espera recibir por props dos objetos. 'skeletonSize' con sus propiedades "width", "heigth" y "radius" y 'skeletonContainer' con sus propiedades "width", "height", "justifyContent", "alignItems", "display", "position" cuyos valores deben ser iguales a las del contenido que se desea reemplazar.
+
+Valores para radius en cada caso de contenido a reemplazar:
+.-Texto: se recomienda no pasar ningun valor
+.-Avatar: utilizar el valor 50%
+.-Título: utilizar el valor 5px
+
+Forma de uso:
+
+    const sizeSkeleton = { width: '150px', height: '150px', radius: '50%' }
+    const containerSkeleton: { width: '240px', height: '350px',justify: 'center', align:'center' },
+
+    {loading ?
+    <Skeleton skeletonSize={sizeSkeleton} skeletonContainer={containerSkeleton}/>
+    :
+    <img src={data.img} alt="img"></img>
+    }

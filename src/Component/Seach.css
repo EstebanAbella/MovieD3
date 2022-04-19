@@ -1,0 +1,25 @@
+.search{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: var(--white);
+    padding: 20px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.search span{
+    font-size: var(--heading2);
+    font-weight: 500;
+}
+
+.search p{
+    font-size: var(--heading5);
+    font-weight: 500;
+    z-index: 1;
+    margin-bottom: 30px;
+}

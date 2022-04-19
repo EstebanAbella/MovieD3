@@ -1,0 +1,154 @@
+.viewSelectedPage{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px 20px 0;
+    cursor: default;
+}
+
+.imgSelectedPage{
+    position: relative;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.imgP{
+    position: relative;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.txtSelectedPage{
+    position: relative;
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.titleSelectedPage{
+    font-size: var(--heading3);
+    font-weight: 600;
+}
+
+.titleSelectedPage span{
+    color: rgb(165, 165, 165);
+    font-weight: 400;
+}
+
+.genresSelectedPage{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.genresSelectedPage p{
+    margin-right: 10px;
+    font-size: var(--text2);
+}
+
+.overViewSelectedPage{
+    font-size: var(--heading5);
+}
+
+.productionContainerSelectedPage{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.productionSelectedPage{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 20px 0 0;
+}
+
+.productionSelectedPage p{
+    font-weight: 500;
+}
+
+.productionSelectedPage img{
+    width: 100px;
+}
+
+.imgBackgroundSelectedPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+@media all and (max-width: 950px){
+    .viewSelectedPage{
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .imgSelectedPage{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .imgP{
+        width: 40%;
+    }
+    
+    .txtSelectedPage{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 10px 10px;
+    }
+}
+
+@media all and (max-width: 620px){
+
+    .imgP{
+        width: 60%;
+    }
+
+    .titleSelectedPage{
+        font-size: var(--heading4);
+        font-weight: 600;
+    }
+
+    .titleSelectedPage span{
+        font-size: var(--heading5);
+        font-weight: 400;
+    }
+
+    .overViewSelectedPage{
+        font-size: var(--heading6);
+    }
+
+    .imgSelectedPage{
+        min-height: 15vh;
+    }
+}
+
+@media all and (max-width: 400px){
+    .imgP{
+        width: 70%;
+    }
+}

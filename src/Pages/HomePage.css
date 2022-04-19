@@ -1,0 +1,8 @@
+.homePage{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: default;
+}

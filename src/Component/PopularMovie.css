@@ -1,0 +1,27 @@
+.popularMovie{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    margin-top: 40px;
+}
+
+.titleMovie{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.containerCardMovie{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

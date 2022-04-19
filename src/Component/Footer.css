@@ -1,0 +1,148 @@
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    background-color: var(--darkBlue);
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    border-top: 1px solid var(--white);
+    overflow: hidden;
+}
+
+.columnOne{
+    position: relative;
+    width: 100%;
+    min-height: 52vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textFooter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.RedesSocialesFooter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.RedesSocialesFooter img,
+.personalFooter img{
+    width: 45px;
+    filter: invert(100%);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.RedesSocialesFooter img:hover
+.personalFooter img:hover{
+    filter: invert(70%);
+}
+
+.redesFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesFooter p,
+.personalFooter p{
+    color: var(--white);
+    font-weight: 500;
+    margin: 0 0 -25px 10px;
+}
+
+.btnFooter{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.coment{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    text-align: left;
+    color: var(--white);
+    padding: 10px 50px;
+}
+
+.coment hr{
+    color: var(--white);
+    width: 100%;
+    margin: 0 auto 25px auto;
+}
+
+.rights{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.personalFooter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    font-weight: 500;
+    margin: 30px;
+}
+
+.personalFooter h2{
+    font-weight: 700;
+}
+
+.personalFooter .txtPersonalFooter{
+    margin: 0 0 10px 0;
+}
+
+@media all and (max-width: 910px) {
+    .footer{
+        border-top: none;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    .textFooter,
+    .RedesSocialesFooter,
+    .personalFooter{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 35vh;
+        margin: 5px;
+    }
+
+    .columnOne{
+        flex-direction: column;
+    }
+
+    .rights{
+        height: 8vh;
+        margin-top: 30px;
+    }
+}
