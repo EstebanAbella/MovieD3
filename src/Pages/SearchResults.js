@@ -18,6 +18,12 @@ function SearchResults(){
 
     useEffect(
         () => {
+            setResultsSearch(search)
+        },[search]
+    )
+
+    useEffect(
+        () => {
             setLoanding(true)
             const getSearchResults = async () => {
                 try{
